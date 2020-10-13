@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF425B41-A203-4336-9A82-F6436255B800}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Monopoly_Assignment</RootNamespace>
+    <AssemblyName>Monopoly Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BoatPiece.jpg" />
+    <Content Include="BondStreet.jpg" />
+    <Content Include="BowStreet.jpg" />
+    <None Include="CarPiece.jpg" />
+    <Content Include="Chance.jpg" />
+    <Content Include="Chance2.jpg" />
+    <Content Include="Chance3.jpg" />
+    <Content Include="ChanceCard.jpg" />
+    <Content Include="CommunityChest.jpg" />
+    <Content Include="CommunityChest2.jpg" />
+    <Content Include="CommunityChest3.jpg" />
+    <None Include="CommunityChestCard turn.jpg" />
+    <Content Include="CommunityChestCard.jpg" />
+    <Content Include="ConventryStreet.jpg" />
+    <Content Include="d1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="d2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="d3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="d4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="d5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="d6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="DogPiece.jpg" />
+    <None Include="dot_PNG4.png" />
+    <Content Include="ElectricCompany.jpg" />
+    <Content Include="EustonRoad.jpg" />
+    <Content Include="FenchurchStStation.jpg" />
+    <Content Include="FleetStreet.jpg" />
+    <Content Include="FreeParking.jpg" />
+    <Content Include="Go.jpg" />
+    <Content Include="GoToJail.jpg" />
+    <None Include="HatPiece.jpg" />
+    <Content Include="IncomeTax.jpg" />
+    <Content Include="JustVisiting.jpg" />
+    <Content Include="KingCrossStation.jpg" />
+    <Content Include="LeicesterSquare.jpg" />
+    <Content Include="LiverpoolStStation.jpg" />
+    <Content Include="MarlboroughStreet.jpg" />
+    <Content Include="MaryleboneStation.jpg" />
+    <Content Include="Mayfair.jpg" />
+    <None Include="Monopoly logo.jpg" />
+    <Content Include="Monopoly.jpg" />
+    <None Include="Monopolyemptych.jpg" />
+    <Content Include="monopoly_board.jpg" />
+    <Content Include="Northumrl%27dAvenue.jpg" />
+    <Content Include="OldKenkRoad.jpg" />
+    <Content Include="OxfordStreet.jpg" />
+    <Content Include="PallMall.jpg" />
+    <Content Include="ParkLane.jpg" />
+    <Content Include="PentonvilleRoad.jpg" />
+    <Content Include="Picadelly.jpg" />
+    <Content Include="RegentStreet.jpg" />
+    <Content Include="Strand.jpg" />
+    <Content Include="SuperTax.jpg" />
+    <Content Include="TheAngelIslington.jpg" />
+    <None Include="Thimble.jpg" />
+    <Content Include="Trafalgar square.jpg" />
+    <Content Include="VineStreet.jpg" />
+    <Content Include="WaterWorks.jpg" />
+    <Content Include="WhiteChapelRoad.jpg" />
+    <Content Include="Whitehall.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
